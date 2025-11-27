@@ -1,0 +1,103 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Layout center */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f6fa;
+}
+
+/* Form */
+form {
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Label */
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input basic style */
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f0f1f3;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+/* Password wrapper */
+form > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #f0f1f3;
+  border-radius: 8px;
+  padding: 0 10px;
+  gap: 8px;
+}
+
+/* Fokus effect (wrapper ikut fokus) */
+form > div:focus-within {
+  outline: 2px solid #4070f4;
+  background: #fff;
+}
+
+/* Input password (remove left padding cause wrapper already adds it) */
+form > div input {
+  flex: 1;
+  background: transparent;
+  padding: 10px 0;
+}
+
+/* Eye buttons */
+#open-eye,
+#close-eye {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  stroke: #444;
+}
+
+#close-eye {
+  display: none;
+}
+
+/* Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #4070f4;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #2657e0;
+}

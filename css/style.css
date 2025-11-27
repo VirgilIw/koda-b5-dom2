@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+input {
+  font-size: 15px;
+}
+main {
+  display: flex;
+  width: 40%;
+}
+
+#eye {
+  width: 120%;
+}
+
+#close-eye {
+  position: relative;
+  right: 15%;
+}
+
+#open-eye {
+  display: none;
+  position: relative;
+  right: 15%;
+}
